@@ -33,7 +33,7 @@ class MonitorNetwork(object):
         url = f"{self.base_url}device/models"
         response = HttpMethods(self.session, url).request('GET')
         result = ParseMethods.parse_data(response)
-        device_type = [device['deviceClass'] for device in result if device_model in device['name']][0]
+        device_type = [device['deviceClass'] for device in result if device_model == device['name']][0]
         return device_type
 
     def _ipsec_query_params(self, query_params, **kwargs):
