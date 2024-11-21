@@ -11,7 +11,7 @@ ipaddress==1.0.17
 jinja2==2.11.3
 keyring==10.6.0
 keyrings.alt==3.0
-lxml==4.6.3
+lxml==4.9.1
 MarkupSafe==1.1.1
 ncclient==0.6.6
 netaddr==0.7.19
